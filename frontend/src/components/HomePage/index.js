@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Layout from "../Layout";
-import { ReactComponent as ImageBanner } from "../../images/vrdude.svg";
-import { EventList } from "../EventsPage";
+// import { ReactComponent as ImageBanner } from "../../images/vrdude.svg";
+// import { EventList } from "../EventsPage";
 import "./HomePage.css";
 import * as eventActions from "../../store/events";
 import ReactPlayer from "react-player"
@@ -52,7 +52,7 @@ const HomePage = () => {
 					<h2 className="upcoming-events">
 						Upcoming Events:
 						</h2>
-					<EventList events={events.slice(0, 8)} />
+					{/* <EventList events={events.slice(0, 8)} /> */}
 				</p>
 
 		</Layout>
