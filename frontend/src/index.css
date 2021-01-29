@@ -1,0 +1,42 @@
+body {
+	--black:black;
+	--background:white;
+	--dark-blue:rgba(255, 255, 255, 0.2);
+	--grey: #bbb;
+	background-color: var(--background);
+	font-family: inter;
+	margin: 0;
+	overscroll-behavior: contain;
+}
+
+/* @font-face {
+  font-family: 'Inter';
+  src: local('Inter'), ur;("./fonts/Inter-VariableFont_slnt,wght.ttf") format('Inter');
+} */
+
+.link-button,
+.button {
+	padding: 0.5em;
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: white;
+}
+
+.button.button--danger {
+	background-color: red;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:focus,
+button:active {
+	outline: none;
+}
+
+

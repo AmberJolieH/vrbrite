@@ -1,0 +1,48 @@
+.EventsPage {
+	max-width: 960px;
+	margin: auto;
+}
+
+.EventsPage__header {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.EventsPage__header h1 {
+	margin-right: 1rem;
+}
+
+.EventList {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+}
+
+.EventList__EventItem {
+	padding: 1em;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.EventList__EventItem__category {
+	color: var(--grey);
+	margin: 0;
+	font-weight: normal;
+}
+
+.EventList__EventItem__name {
+	position: relative;
+}
+
+.EventList__EventItem__name:before {
+	position: absolute;
+	content: "";
+	width: 4px;
+	top: -5px;
+	height: 125%;
+	left: -16px;
+	background-color: var(--light-blue);
+}

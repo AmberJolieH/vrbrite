@@ -1,0 +1,53 @@
+.event-banner {
+	height: 300px;
+	width: 100%;
+	background-color: var(--dark-blue);
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 80px;
+}
+
+.event-banner__text {
+	padding: 20px 80px;
+	font-weight: 800;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	color: var(--light-pink);
+}
+
+.event-banner__text h1 {
+	font-size: 38px;
+}
+
+.event-banner__text h4 {
+	font-size: 24px;
+}
+
+.event-banner__image {
+	object-fit: cover;
+	position: absolute;
+	top: -10%;
+	left: 32px;
+	z-index: 1;
+	height: 125%;
+	width: 40%;
+}
+
+.event-details {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 24px;
+	max-width: 960px;
+	margin: 2rem auto;
+	width: 100%;
+}
+
+.map {
+	height: 280px;
+	width: auto;
+}
+
+.event-page p {
+	font-size: 14px;
+}

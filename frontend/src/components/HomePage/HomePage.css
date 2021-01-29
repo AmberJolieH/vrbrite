@@ -1,0 +1,44 @@
+.home-banner {
+	height: 100px;
+	width: 400%;
+	background-color: transparent;
+	position: absolute;
+	margin-bottom: 30px;
+}
+
+.event-category-links__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	position: absolute;
+	bottom: 50%;
+}
+.home-banner__text {
+	padding: 30px 550px;
+	font-size: 40px;
+	font-weight: 800;
+	color: black;
+	align-items: center;
+	position: absolute;
+	bottom: -455%;
+}
+.player-wrapper {
+  padding-top: 0%;
+  align-items: center;
+  margin-left: 450px;
+  position: absolute;
+}
+
+
+.event-category-links {
+	/* color: var(--dark-blue); */
+	font-weight: 800;
+	margin-left: 1.5rem;
+
+}
+
+.upcoming-events {
+position: absolute;
+bottom: 3%;
+align-items: center;
+}
