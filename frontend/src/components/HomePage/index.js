@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Layout from "../Layout";
-// import { ReactComponent as ImageBanner } from "../../images/vrdude.svg";
-// import { EventList } from "../EventsPage";
+import { ReactComponent as ImageBanner } from "../../images/vrdude.svg";
+import { EventList } from "../EventsPage";
 import "./HomePage.css";
 import * as eventActions from "../../store/events";
 import ReactPlayer from "react-player"
@@ -33,13 +33,15 @@ const HomePage = () => {
 			</div>
 			<div className="home-banner">
 				<p className="player-wrapper">
+
 					<ReactPlayer
 						url='https://www.youtube.com/watch?v=_d-hMZaU5Po'
 						playing="true"
 						loop="true"
 						volume="null"
 						alight-items="center"
-						border-radius="5px"
+						borderRadius="100px"
+						// z="-1"
 					/>
 				</p>
 				<p className="home-banner__text">
@@ -48,12 +50,12 @@ const HomePage = () => {
 
 			</div>
 
-				<p className="event-category-links">
+				{/* <p className="event-category-links">
 					<h2 className="upcoming-events">
 						Upcoming Events:
 						</h2>
-					{/* <EventList events={events.slice(0, 8)} /> */}
-				</p>
+					{ <EventList events={events.slice(0, 8)} /> }
+				</p> */}
 
 		</Layout>
 	);

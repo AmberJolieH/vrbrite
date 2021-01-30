@@ -3,30 +3,22 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
-import { ReactComponent as ImageBanner } from "../../images/VRbrite.svg";
+import { ReactComponent as ImageBanner } from "../../images/logo.svg";
 const Navigation = () => {
 	const user = useSelector((store) => store.session.user);
 
 	return (
+		
 		<div className="navigation">
-			<NavLink exact to="/" className="right-nav">
-				<h2 className="logo" style={{
-					marginLeft: ".01rem",
-					marginTop: ".01rem",
-					position: "absolute",
-					bottom: "20%",
-					left: ".001%",
-				}}>
-					<ImageBanner
-						alt="vr guy"
-						className="vrguy"
-						position="absolute"
-						bottom="20%"
-						left="5%"
+				<NavLink exact to="/" className="right-nav">
+					<h2 className="logo" style={{ marginLeft: ".5rem", marginTop: "-2rem"}}>
+					{/* VRbrite */}
+						<ImageBanner
+						alt="logoimage"
+						className="home-banner__image"
 						/>
-				</h2>
+					</h2>
 			</NavLink>
-
 			<ul className="right-nav">
 				<li>
 					<NavLink exact to="/events">

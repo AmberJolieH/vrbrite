@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
-import MenuIcon from '@material-ui/icons/Menu';
-import { ReactComponent as ImageBanner } from "../../images/vrdude.svg";
 
 const ProfileButton = ({ user }) => {
 	const dispatch = useDispatch();
@@ -29,19 +27,16 @@ const ProfileButton = ({ user }) => {
 	};
 
 	return (
-
 		<div className="profile-button">
 			<button
 				className="profile-button__trigger"
 				style={{
-					color: "#000000",
-					fontSize: 14,
+					color: "white",
+					fontSize: 10,
 					backgroundColor: "transparent",
 				}}
 				onClick={openMenu}
 			>
-				<MenuIcon />
-
 				<i className="fas fa-ellipsis-v"></i>
 			</button>
 			{showMenu && (
@@ -58,6 +53,5 @@ const ProfileButton = ({ user }) => {
 		</div>
 	);
 };
-
 
 export default ProfileButton;

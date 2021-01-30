@@ -4,6 +4,7 @@
 	background-color: transparent;
 	position: absolute;
 	margin-bottom: 30px;
+	align-items: center;
 }
 
 .event-category-links__list {
@@ -14,7 +15,7 @@
 	bottom: 50%;
 }
 .home-banner__text {
-	padding: 30px 550px;
+	padding: 90px 450px;
 	font-size: 40px;
 	font-weight: 800;
 	color: black;
@@ -23,10 +24,11 @@
 	bottom: -455%;
 }
 .player-wrapper {
-  padding-top: 0%;
+  padding-top: -8rem;
   align-items: center;
-  margin-left: 450px;
-  position: absolute;
+  margin-left: 350px;
+  margin-top: -2rem;
+  /* position: absolute; */
 }
 
 

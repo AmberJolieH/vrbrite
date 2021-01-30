@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
 import L from "leaflet";
-
+import { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 
 const MapDisplay = ({ lat, long }) => {
@@ -18,8 +18,12 @@ const MapDisplay = ({ lat, long }) => {
 		iconSize: new L.Point(45, 45),
 		className: "leaflet-map-marker",
 	});
-
+	// useEffect(() => {
+	// 	const lmap = SLMap(document.getElementById('map-container'));
+	// 	lmap.setView([1001.5, 997.5], 7)
+	// });
 	const coords = [lat, long];
+
 
 	return (
 		<div className="map">
@@ -29,16 +33,22 @@ const MapDisplay = ({ lat, long }) => {
 				scrollWheelZoom={true}
 				style={{ height: "100%" }}
 			>
-				        
+
 				<TileLayer
-					url="https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+					url="http://map.secondlife.com/map-{z}-{x}-{y}-objects.jpg"
 					crossOrigin
 				/>
-				        
+
 				<Marker position={coords} icon={mapIcon} />
-				      
+
 			</MapContainer>
+
+			<div>
+
+			</div>
 		</div>
+
+
 	);
 };
 

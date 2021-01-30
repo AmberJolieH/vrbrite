@@ -1,10 +1,11 @@
+
 ul {
 	list-style-type: none;
 	text-decoration: none;
 }
 
 i {
-	color: var(--dark-blue);
+	color:white ;
 }
 
 .navigation {
@@ -16,21 +17,10 @@ i {
 .logo {
 	color: black;
 	text-decoration: none;
-	width: -200%; 
-    height: -200%; 
-	object-fit: contain;
-	position: absolute;
-	bottom: 50%;
 
- }
-.right-nav h2{
-	color: black;
-	text-decoration: none;
-	width: -400%; 
-    height: -400%; 
-	object-fit: contain;
-	position: absolute;
-	bottom: 30%;
+}
+.logo home-banner__image{
+	height:10%;
 }
 .right-nav {
 	align-self: flex-start;
@@ -39,36 +29,42 @@ i {
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
-	margin-right: 1.6rem;
-	position: absolute;
+	margin-right: 1.5rem;
+	font-size:150;
+	border-radius:10px
 }
 .right-nav a {
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: 900;
 	color: black;
-	border-radius: 5px;
-	border: solid 0px black;
+	/* margin-right: 15px;
+	margin-left: 15px;
+	margin-top:15px;
+	border-radius:10px */
+	/* padding: 10px; */
+	
+}
+.right-nav a{
+	margin:10px;
 	padding: 10px;
-
+  	margin-top: 50px;
+	margin-left: 15px;
+	font-size:80;
 }
 .right-nav li:not(:first-of-type) {
 	margin-left: 0.5rem;
-}
-
-.right-nav a:hover{
-	background-color:white;
-  	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
+	position: relative;
+	font-size: 40;
 }
 
 .profile-button {
 	position: relative;
-	color:black;
 }
 
 .profile-button__trigger {
 	border: none;
 	padding-left: 0;
-	font-size: 14;
+	font-size: 10;
 	background-color: transparent;
 }
 
@@ -79,24 +75,25 @@ i {
 	box-sizing: content-box;
 	right: 0;
 	top: 32px;
-	border-radius: 5px;
+	border-radius: 3px;
 	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
-	/* border: 1px solid #d5dce0; */
+	border: 1px solid #d5dce0;
 	max-width: calc(100vw - 24px);
 	width: max-content;
-	padding: 10px 0 ;
+	padding: 5px 0;
 	text-decoration: none;
 }
 
 .right-nav .profile-button__dropdown li {
 	padding: 6px 22px;
 	text-align: left;
-	margin: 0px;
+	margin: 0;
 }
 
 .profile-button__dropdown li .button {
 	border: 0;
-	margin: 10px
 }
-
-
+.right-nav a:hover{
+	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
+	border-radius:5px
+}
