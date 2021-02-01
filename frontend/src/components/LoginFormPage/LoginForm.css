@@ -15,7 +15,7 @@
 	font-weight: 800;
 	border-radius: 8px;
 	border: 1px solid  rgba(44, 43, 43, 0.1);
-	box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
 	flex-direction: column;
 	padding: 3.25rem;
 	line-height: 1.5;

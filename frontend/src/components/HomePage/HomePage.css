@@ -15,18 +15,18 @@
 	bottom: 50%;
 }
 .home-banner__text {
-	padding: 90px 450px;
+	padding: 150px 455px 0px 475px;
 	font-size: 40px;
 	font-weight: 800;
 	color: black;
 	align-items: center;
 	position: absolute;
-	bottom: -455%;
+	bottom: -400%;
 }
 .player-wrapper {
   padding-top: -8rem;
   align-items: center;
-  margin-left: 350px;
+  margin-left: 370px;
   margin-top: -2rem;
   /* position: absolute; */
 }

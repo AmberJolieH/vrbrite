@@ -28,7 +28,7 @@
 }
 
 .EventList__EventItem__category {
-	color: var(--grey);
+	color: black;
 	margin: 0;
 	font-weight: normal;
 }
@@ -44,5 +44,5 @@
 	top: -5px;
 	height: 125%;
 	left: -16px;
-	background-color: var(--light-blue);
+	background-color: black;
 }

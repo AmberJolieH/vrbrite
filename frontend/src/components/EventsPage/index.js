@@ -9,7 +9,7 @@ import * as categoryActions from "../../store/categories";
 import "./EventsPage.css";
 
 export const EventList = ({ events, isFetching = false }) => (
-	<ul className="EventList" style={isFetching ? { opacity: 0.7 } : {}}>
+	<ul className="EventList" style={isFetching ? { opacity: 0 } : {}}>
 		{events.map((event) => (
 			<li className="EventList__EventItem" key={event.id}>
 				<h3 className="EventList__EventItem__category">
@@ -68,8 +68,8 @@ const EventsPage = () => {
 				) : isFetching ? (
 					<p>Loading...</p>
 				) : (
-					<p>No events match</p>
-				)}
+							<p>No events match</p>
+						)}
 			</div>
 		</Layout>
 	);

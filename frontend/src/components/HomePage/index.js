@@ -40,8 +40,6 @@ const HomePage = () => {
 						loop="true"
 						volume="null"
 						alight-items="center"
-						borderRadius="100px"
-						// z="-1"
 					/>
 				</p>
 				<p className="home-banner__text">

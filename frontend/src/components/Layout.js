@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const Layout = ({ children }) => (
 	<>
 		<Navigation />
-		<div style={{ minHeight: "75vh" }}>{children}</div>
+		<div style={{ minHeight: "55.5vh" }}>{children}</div>
 		<Footer />
 	</>
 );
