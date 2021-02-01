@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Layout from "../Layout";
-import MapDisplay from "../MapDisplay";
-import DefaultDescription from "./DefaultDescription";
-import EventImage from "../EventImage";
 import * as eventActions from "../../store/events";
 import * as ticketActions from "../../store/tickets";
 import "./EventPage.css";
