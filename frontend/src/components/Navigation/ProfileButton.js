@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import * as sessionActions from "../../store/session";
-
+import MenuIcon from '@material-ui/icons/Menu';
 const ProfileButton = ({ user }) => {
 	const dispatch = useDispatch();
 	const [showMenu, setShowMenu] = useState(false);
@@ -28,17 +28,22 @@ const ProfileButton = ({ user }) => {
 
 	return (
 		<div className="profile-button">
+			
 			<button
+				
 				className="profile-button__trigger"
 				style={{
-					color: "white",
+					color: "black",
 					fontSize: 10,
 					backgroundColor: "transparent",
 				}}
+				
 				onClick={openMenu}
-			>
+			><MenuIcon />
 				<i className="fas fa-ellipsis-v"></i>
+				
 			</button>
+
 			{showMenu && (
 				<ul className="profile-button__dropdown">
 					<li>{user.username}</li>

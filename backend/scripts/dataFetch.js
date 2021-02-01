@@ -2,14 +2,13 @@
 // const fetch = require("cross-fetch");
 
 // const getData = async () => {
-// 	const res = await fetch("http://www.SkiReg.com/api/search");
+// 	const res = await fetch("");
 // 	const json = await res.json();
 // 	// console.log(json);
 // 	const page = await json.MatchingEvents.map((e) => {
 // 		return {
 // 			categoryName: e.EventTypes[0],
 // 			name: e.EventName,
-// 			website: e.EventWebsite,
 // 			state: e.EventState,
 // 			lat: e.Latitude,
 // 			long: e.Longitude,
@@ -34,4 +33,4 @@
 // 	});
 // })();
 
-// //drop region, add event website
+//drop region, add event website

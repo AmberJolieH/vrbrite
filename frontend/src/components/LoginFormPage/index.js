@@ -30,7 +30,7 @@ const LoginFormPage = () => {
 			<div className="login-background">
 				<div className="login-form">
 					<form onSubmit={handleSubmit}>
-						<p className="logo" style={{ margin: "auto" }}>
+						<p className="logo" style={{ margin: "auto", fontSize:50, fontFamily:"inter"}}>
 							VRbrite
 						</p>
 						<ul>

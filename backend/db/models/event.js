@@ -14,13 +14,8 @@ module.exports = (sequelize, DataTypes) => {
   Event.init(
     {
       name: DataTypes.STRING,
-      website: DataTypes.STRING,
-      state: DataTypes.STRING,
-      lat: DataTypes.DECIMAL,
-      long: DataTypes.DECIMAL,
-      distance: DataTypes.FLOAT,
-      startsAt: DataTypes.DATE,
-      endsAt: DataTypes.DATE,
+      location: DataTypes.STRING,
+      date: DataTypes.STRING,
       capacity: DataTypes.INTEGER,
       eventCategoryId: DataTypes.INTEGER,
     },

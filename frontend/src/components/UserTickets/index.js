@@ -39,51 +39,40 @@ const UserTickets = (props) => {
 						{tickets.map((ticket) => (
 							<li key={ticket.id}>
 								<div className="ticket-card">
-									<div className="ticket-card__map">
-										<MapDisplay
-											lat={ticket.Event.lat}
-											long={ticket.Event.long}
-										/>
-									</div>
+
 									<div className="ticket-card__details">
 										<h2 className="ticket-event-name">
 											{ticket.Event.name}
 										</h2>
 										<h4 className="date-ribbon">
-											{new Date(
-												ticket.Event.startsAt
-											).toLocaleDateString(undefined, {
-												weekday: "long",
-												year: "numeric",
-												month: "long",
-												day: "numeric",
-											})}
+											Event Date:    
+											{ticket.Event.date}
 										</h4>
 										<div className="ticket-card__details__actions">
 											<a
-												href={ticket.Event.website}
+												href={ticket.Event.location}
 												className="link-button"
 											>
-												Event website
+												In-World Location
 											</a>
 											{ticket.isDeleting ? (
 												<button disabled>
 													Deleting...
 												</button>
 											) : (
-												<button
-													onClick={() =>
-														dispatch(
-															ticketActions.deleteTicket(
-																ticket.id
+													<button
+														onClick={() =>
+															dispatch(
+																ticketActions.deleteTicket(
+																	ticket.id
+																)
 															)
-														)
-													}
-													className="button button--danger"
-												>
-													Remove ticket
-												</button>
-											)}
+														}
+														className="button button--danger"
+													>
+														Remove ticket
+													</button>
+												)}
 										</div>
 									</div>
 								</div>
@@ -91,14 +80,14 @@ const UserTickets = (props) => {
 						))}
 					</ul>
 				) : (
-					<>
-						<p>No tickets, yet</p>
-						<p>
-							Register for one from our{" "}
-							<Link to="/events">events page</Link>!
+						<>
+							<p>No tickets, yet</p>
+							<p>
+								Register for one from our{" "}
+								<Link to="/events">events page</Link>!
 						</p>
-					</>
-				)}
+						</>
+					)}
 			</div>
 		</Layout>
 	);

@@ -15,12 +15,12 @@ module.exports = {
       delete event.categoryName;
       event.eventCategoryId = eventCategory.id;
       // replace dates
-      let startDateString =
-        parseInt(event.startsAt.split("-")[0], 10) + 43200000; // adds 12 hours for TZs
-      event.startsAt = new Date(startDateString);
-      let endDateString =
-        parseInt(event.endsAt.split("-")[0], 10) + 43200000; // adds 12 hours for TZs
-      event.endsAt = new Date(endDateString);
+      // let startDateString =
+      //   parseInt(event.startsAt.split("-")[0], 10) + 43200000; // adds 12 hours for TZs
+      // event.startsAt = new Date(startDateString);
+      // let endDateString =
+      //   parseInt(event.endsAt.split("-")[0], 10) + 43200000; // adds 12 hours for TZs
+      // event.endsAt = new Date(endDateString);
 
       // add to bulk attrs
       events.push(event);

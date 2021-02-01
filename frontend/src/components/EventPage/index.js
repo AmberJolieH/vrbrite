@@ -53,105 +53,61 @@ const EventPage = (props) => {
 
 	return (
 		<Layout>
-			<div className="event-page">
+		<div className="event-card" >
+			{/* <div className="event-page"> */}
 				<div className="event-banner">
 					<div className="event-banner__text">
 						<h1>{eventName}</h1>
 						<h4>{event.EventCategory.name}</h4>
 					</div>
-					<EventImage
-						name={event.EventCategory.name}
-						className="event-banner__image"
-					/>
-				</div>
-				<div className="event-details">
-					<div className="event-details__description">
-						<strong>Description</strong>
-						{!!event.description ? (
-							<p>{event.description}</p>
-						) : (
-							<DefaultDescription />
-						)}
-					</div>
-					<div className="event-details__details">
+					<div className="event-banner__details">
 						{!user ? (
 							"Login to register for events"
 						) : !!eventTicket ? (
 							eventTicket.isDeleting ? (
 								<button disabled>Deleting...</button>
 							) : (
-								<button
-									className="button button--danger"
-									onClick={() =>
-										dispatch(
-											ticketActions.deleteTicket(
-												eventTicket.id
+									<button
+										className="button button--danger"
+										onClick={() =>
+											dispatch(
+												ticketActions.deleteTicket(
+													eventTicket.id
+												)
 											)
-										)
-									}
-								>
-									Remove ticket
-								</button>
-							)
+										}
+									>
+										Remove ticket
+									</button>
+								)
 						) : isAddingTicket ? (
 							<button className="button" disabled>
 								Adding...
 							</button>
 						) : (
-							<button
-								className="button"
-								onClick={() =>
-									dispatch(ticketActions.addTicket(eventId))
-								}
-							>
-								Get Ticket
-							</button>
-						)}
+										<button
+											className="button"
+											onClick={() =>
+												dispatch(ticketActions.addTicket(eventId))
+											}
+										>
+											Get Ticket!
+										</button>
+									)}
 						<p>
-							<strong>State</strong> {event.state}
+							<strong>In-World Location: </strong>
+							<a href={event.location}> {event.name}</a>
 						</p>{" "}
-						{!!event.website && (
-							<p>
-								<strong>Website</strong>{" "}
-								{
-									<a
-										target="_blank"
-										href={event.website}
-										rel="noreferrer"
-									>
-										{event.website}
-									</a>
-								}
-							</p>
-						)}
+
 						<p>
-							<strong>Start Date</strong>{" "}
-							{new Date(event.startsAt).toLocaleDateString(
-								undefined,
-								{
-									weekday: "long",
-									year: "numeric",
-									month: "long",
-									day: "numeric",
-								}
-							)}
+							<strong>Date: </strong>{" "}
+							{event.date}
 						</p>
-						<p>
-							<strong>End Date</strong>{" "}
-							{new Date(event.endsAt).toLocaleDateString(
-								undefined,
-								{
-									weekday: "long",
-									year: "numeric",
-									month: "long",
-									day: "numeric",
-								}
-							)}
-						</p>
-						<MapDisplay lat={event.lat} long={event.long} />
+
 					</div>
 				</div>
-			</div>
+			{/* </div> */}
+		</div>
 		</Layout>
 	);
 };

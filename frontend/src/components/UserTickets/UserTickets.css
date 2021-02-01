@@ -12,12 +12,11 @@
 	height: 280px;
 	background-color: white;
 	border-radius: 0.3em;
-	box-shadow: 0 0.25rem 1rem 0 rgba(108, 99, 255, 0.2);
+	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
 	margin: 25px auto;
 	padding: 1em;
 
 	display: grid;
-	grid-template-columns: 260px 1fr;
 	grid-column-gap: 1em;
 }
 
@@ -37,4 +36,13 @@
 .ticket-card__details__actions .link-button {
 	margin-right: 0.5em;
 	background-color: white;
+}
+.link-button:hover{
+	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
+}
+.button.button--danger{
+	color: white;
+}
+.button.button--danger:hover{
+	box-shadow: 4px 5px 10px 0px rgba(119, 104, 104, 0.8553);
 }
